@@ -1,0 +1,57 @@
+@import "../../../app.component.css";
+
+.header{
+  display: block;
+  background: url(../../../../assets/image/bgd.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 120em;
+  height: 60em;
+  color: var(--header-text-color);
+}
+
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.navbar-logo img {
+  width: 20em;
+  height: 10em;
+}
+
+.navbar-start{
+  display: block;
+  padding: 1.05em 0;
+
+}
+
+.navbar-start_item{
+  margin: 0.5em;
+  padding: 1.05em 1.8em;
+  color: #355c57;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+.navbar-start_item:hover {
+  color: #8e5157;
+}
+
+.navbar-start_item:active {
+  color: #e1e1e1;
+}
+
+.navbar-start_item:focus {
+  outline: none;
+  color:#f9faf9;
+}

@@ -1,0 +1,56 @@
+.footer {
+  display: block;
+  background-color: #8CBD54;
+  padding: 1em 0;
+  margin: 0 auto;
+  width: 100%;
+  color: #f9faf9;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.9;
+  letter-spacing: 0.05em;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+  padding: 0.4em 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container__logo img {
+  width: 14em;
+  height: 7em;
+}
+
+.container__contact{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  color: #8e5157;
+  font-size: 1em;
+
+}
+
+.container__contact_item{
+  text-decoration: none;
+}
+
+.container__contact_item:hover,
+.container__contact_item:active,
+.container__contact_item:focus {
+  color: #f9faf9;
+}
+
+.container__contact_item:focus {
+  outline: none;
+}
+
+.container__social-network img{
+  padding: 2.5em .5em ;
+  width: 2.5em;
+  height: 2.5em;
+}
