@@ -1,0 +1,23 @@
+/*@import "style.css";*/
+
+:root {
+  --honeydew: #f9faf9;
+  --gainsboro: #e1e1e1;
+  --finch: #7a8b4f;
+  --fern-green: #4f7b46;
+  --oracle: #355c57;
+  --solid-pink: #8e5157;
+
+  /*-----Common-----*/
+  --text-color: var(--oracle);
+
+  /*-----Header-----*/
+  --header-text-color: var(--finch);
+
+  /*-----Button-----*/
+  --button-border: var( --finch);
+  --button-color: var( --finch);
+  --button-bgd-color-hover: var( --finch);
+  --button-color-hover: var( --honeydew);
+
+}
