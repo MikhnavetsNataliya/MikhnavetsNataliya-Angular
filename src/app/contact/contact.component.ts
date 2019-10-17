@@ -24,6 +24,6 @@ export class ContactComponent implements OnInit {
   }*/
   onSubmit(isValid: boolean) {
     const infoClient = `Меня зовут ${this.name}. Email ${this.email}. Телефон: ${this.phone}. Сообщение: ${this.message}`;
-
+    alert(infoClient);
   }
 }

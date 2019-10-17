@@ -32,11 +32,11 @@
   margin: 0;
   color: #8e5157;
   font-size: 1em;
-
 }
 
 .container__contact_item{
   text-decoration: none;
+  color: #355c57;
 }
 
 .container__contact_item:hover,
