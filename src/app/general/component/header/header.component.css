@@ -2,12 +2,12 @@
 
 .header{
   display: block;
-  background: url(../../../../assets/image/bgd.jpg);
+  background: url(../../../../assets/image/bgd_header.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 120em;
-  height: 60em;
+  width: 100vw;
+  height: 100vh;
   color: var(--header-text-color);
 }
 
@@ -16,7 +16,7 @@
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
-  padding: 0;
+  padding: 2em 0;
   margin: 0 auto;
   width: 100%;
 }
@@ -44,14 +44,14 @@
 }
 
 .navbar-start_item:hover {
-  color: #8e5157;
+  color: #8CBD54;
 }
 
 .navbar-start_item:active {
-  color: #e1e1e1;
+  color: #8CBD54;
 }
 
 .navbar-start_item:focus {
   outline: none;
-  color:#f9faf9;
+  color:#8CBD54;
 }
