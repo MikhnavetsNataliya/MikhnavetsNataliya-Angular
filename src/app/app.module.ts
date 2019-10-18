@@ -11,7 +11,7 @@ import { GeneralModule } from './general/general.module';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { DirectionComponent } from './direction/direction.component';
+import { DirectionComponent } from './direction/components/direction.component';
 
 const routes: Routes = [
   {
