@@ -1,0 +1,13 @@
+<section class="container">
+  <a
+    class="direction-item"
+    [routerLink]="['', { outlets: { pane: ['expedition', expedition.id] } }]"
+    routerLinkActive="active">
+    <p>{{expidition.img}}</p>
+    <h3>{{ expedition.fullname }}</h3>
+    <p>{{ expedition.country}}</p>
+    <p>{{ expedition.complication}}</p>
+    <p>{{ expedition.duration + 'дней'}}}</p>
+    <h4>{{ expedition.price | currency:'BLR':'code'}}</h4>
+  </a>
+</section>

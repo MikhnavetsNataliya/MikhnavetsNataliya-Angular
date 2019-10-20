@@ -1,0 +1,12 @@
+<div class="direction-view">
+  <p>{{ (expidition | async).img }}</p>
+  <p>{{ (expidition | async).type }}</p>
+  <h3>{{ (expidition | async).fullname }}</h3>
+  <p>{{ (expidition | async).country}}</p>
+  <p>{{ (expidition | async).complication}}</p>
+  <p>{{ (expidition | async).duration + 'дней' }}</p>
+  <p>{{ (expidition | async).groupSize}}</p>
+  <p>{{ (expidition | async).instructor}}</p>
+  <h4>{{ (expidition | async).price | currency:'BLR':'code'}}</h4>
+  <p>{{ (expidition | async).generalInformation}}</p>
+</div>

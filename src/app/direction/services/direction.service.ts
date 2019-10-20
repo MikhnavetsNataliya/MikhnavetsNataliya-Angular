@@ -18,6 +18,6 @@ export class DirectionService {
   ) { }
 
   getExpedition(): Observable<Expedition[]> {
-    return this.http.get<Expedition[]>('/api/direction');
+    return this.http.get<Expedition[]>('/api/expeditions');
   }
 }

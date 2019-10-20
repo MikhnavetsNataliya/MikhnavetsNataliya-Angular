@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DirectionComponent } from './direction.component';
+import { DirectionListComponent } from './direction-list.component';
 
-describe('DirectionComponent', () => {
-  let component: DirectionComponent;
-  let fixture: ComponentFixture<DirectionComponent>;
+describe('DirectionListComponent', () => {
+  let component: DirectionListComponent;
+  let fixture: ComponentFixture<DirectionListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DirectionComponent ]
+      declarations: [ DirectionListComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DirectionComponent);
+    fixture = TestBed.createComponent(DirectionListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

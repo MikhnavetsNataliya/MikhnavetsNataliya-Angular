@@ -2,7 +2,7 @@ export interface Expedition {
   id: number,
   fullname: string,
   type: string,
-  img: any,
+  img: string,
   country: string,
   complication: string,
   duration: number,
