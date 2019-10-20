@@ -11,7 +11,9 @@ import { GeneralModule } from './general/general.module';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { DirectionComponent } from './direction/components/direction.component';
+import { DirectionFullViewComponent } from './direction/containers/direction-full-view/direction-full-view.component';
+import { DirectionListComponent } from './direction/components/direction-list/direction-list.component';
+import { DirectionViewComponent } from './direction/components/direction-view/direction-view.component';
 
 const routes: Routes = [
   {
@@ -21,7 +23,7 @@ const routes: Routes = [
   },
   {
     path: 'direction',
-    component: DirectionComponent
+    /*component: DirectionComponent*/
   },
   {
     path: 'contact',
@@ -47,6 +49,9 @@ const routes: Routes = [
     NotFoundComponent,
     DirectionComponent,
     AboutComponent,
+    DirectionFullViewComponent,
+    DirectionListComponent,
+    DirectionViewComponent,
   ],
   imports: [
     BrowserModule,

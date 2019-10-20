@@ -1,5 +1,5 @@
 export default {
-  expedition: {
-    expedition: '/api/direction'
+  catalog: {
+    expedition: '/api/expeditions'
   }
 };

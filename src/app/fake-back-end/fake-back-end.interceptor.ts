@@ -23,7 +23,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
 
     function handleRoute() {
       switch (true) {
-        case checkUrl(request, endpoints.expedition.expedition):
+        case checkUrl(request, endpoints.catalog.expedition):
           return getExpedition();
         default:
           return next.handle(request);
