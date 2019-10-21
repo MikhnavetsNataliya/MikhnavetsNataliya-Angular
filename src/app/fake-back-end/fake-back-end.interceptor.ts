@@ -4,8 +4,8 @@ import { Observable, of } from 'rxjs';
 import { delay, dematerialize, materialize, mergeMap } from 'rxjs/operators';
 
 import endpoints from './endpoints';
-import { checkUrl } from './helpers';
-import { getExpedition} from './routes';
+import { checkUrl, idFromUrl } from './helpers';
+import { getExpeditions, getExpeditionById} from './routes';
 
 @Injectable()
 export class FakeBackendInterceptor implements HttpInterceptor {
@@ -23,12 +23,15 @@ export class FakeBackendInterceptor implements HttpInterceptor {
 
     function handleRoute() {
       switch (true) {
-        case checkUrl(request, endpoints.catalog.expedition):
-          return getExpedition();
+        case checkUrl(request, endpoints.expeditions.expeditions):
+          const type = request.params.get('type');
+          return getExpeditions(type);
+        case request.url.match(/\/expeditions\/\d+$/) && request.method === 'GET':
+          const expeditionId = idFromUrl(request);
+          return getExpeditionById(expeditionId);
         default:
           return next.handle(request);
       }
     }
   }
 }
-

@@ -32,8 +32,7 @@ export function checkUrl(request: HttpRequest<any>, path: string) {
   return request.url.endsWith(path);
 }
 
-/*
 export function idFromUrl(request: HttpRequest<any>): number {
   const urlParts = request.url.split('/');
   return parseInt(urlParts[urlParts.length - 1]);
-}*/
+}

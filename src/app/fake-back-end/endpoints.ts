@@ -1,5 +1,5 @@
 export default {
-  catalog: {
-    expedition: '/api/expeditions'
+  expeditions: {
+    expeditions: '/api/expeditions'
   }
 };
