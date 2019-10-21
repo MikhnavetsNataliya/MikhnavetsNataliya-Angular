@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ExpeditionService } from './expedition.service'
 
 interface Nav {
   link: string,
@@ -11,7 +10,7 @@ interface Nav {
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [ExpeditionService]
+  providers: []
 })
 export class AppComponent {
   nav: Nav[] = [
