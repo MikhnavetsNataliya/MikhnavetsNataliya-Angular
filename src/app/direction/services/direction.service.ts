@@ -1,10 +1,9 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
-/*
-import { map, catchError } from 'rxjs/operators';
-*/
+import { map, tap } from 'rxjs/operators';
+
 
 import { Expedition } from '../model/expedition.interface';
 
@@ -13,11 +12,23 @@ import { Expedition } from '../model/expedition.interface';
 })
 export class DirectionService {
 
-  constructor(
-    private http: HttpClient
-  ) { }
+  constructor(private http: HttpClient) { }
 
-  getExpedition(): Observable<Expedition[]> {
-    return this.http.get<Expedition[]>('/api/expeditions');
+  getFullView(type: string): Observable<Expedition[]> {
+    const options = { params: new HttpParams().set('type', type) };
+
+    return this.http
+      .get(`/api/expeditions`, options)
+      .pipe(
+        tap(console.log)
+      );
+  }
+
+  getExpedition(id: string): Observable<Expedition> {
+    return this.http
+      .get(`/api/expeditions/${id}`)
+      .pipe(
+        tap(console.log)
+      );
   }
 }

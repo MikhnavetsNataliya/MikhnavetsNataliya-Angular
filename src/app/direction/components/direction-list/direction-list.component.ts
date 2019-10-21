@@ -8,7 +8,9 @@ import { Expedition } from '../../model/expedition.interface';
   templateUrl: './direction-list.component.html',
   styleUrls: ['./direction-list.component.css']
 })
+
 export class DirectionListComponent {
+
   @Input()
   expedition: Expedition;
 }
