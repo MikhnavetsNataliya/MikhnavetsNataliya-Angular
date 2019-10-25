@@ -23,7 +23,7 @@ export const ROUTES: Routes = [
   {
     path: 'expedition/:id',
     component: DirectionViewComponent,
-    outlet: 'pane',
+    outlet: 'type',
     resolve: {
       expedition: DirectionViewResolve
     }
