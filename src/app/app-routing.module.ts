@@ -2,32 +2,37 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
+/*
 import { DirectionTypeViewComponent } from "./direction/containers/direction-type-view/direction-type-view.component";
+*/
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from "./about/about.component";
 import { NotFoundComponent } from "./not-found/not-found.component";
 
+import { DirectionModule } from "./direction/direction.module";
+
 const routes: Routes = [
   {
     path: '',
-    pathMatch: 'full',
     component: HomeComponent
   },
   {
     path: 'direction',
     redirectTo: 'direction/водный',
-    component: DirectionTypeViewComponent
   },
   {
     path: 'contact',
+    pathMatch: 'full',
     component: ContactComponent
   },
   {
     path: 'about',
+    pathMatch: 'full',
     component: AboutComponent
   },
   {
     path: '**',
+    pathMatch: 'full',
     component: NotFoundComponent
   },
   /*{
@@ -37,7 +42,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    DirectionModule,
+    RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

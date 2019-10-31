@@ -50,28 +50,24 @@ import { FakeBackendInterceptor } from './fake-back-end/fake-back-end.intercepto
   declarations: [
     AppComponent,
     HomeComponent,
-    DirectionTypeViewComponent,
     ContactComponent,
     AboutComponent,
     NotFoundComponent
-
-    /* DirectionFullViewComponent,
-    DirectionListComponent,
-    DirectionViewComponent,
-    */
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     GeneralModule,
     DirectionModule,
     FormsModule
-
   ],
   providers: [
-    /*provide: HTTP_INTERCEPTORS,
+    {
+    provide: HTTP_INTERCEPTORS,
     useClass: FakeBackendInterceptor,
-    multi: true*/
+    multi: true
+    }
   ],
   bootstrap: [AppComponent]
 })

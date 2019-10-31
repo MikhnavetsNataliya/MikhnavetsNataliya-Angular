@@ -15,7 +15,7 @@ import { DirectionService } from './services/direction.service';
 export const ROUTES: Routes = [
   {
     path: 'direction/:name',
-    component: DirectionTypeViewComponent,
+    component: DirectionFullViewComponent,
     resolve: {
       expedition: DirectionFullViewResolve
     }
@@ -48,7 +48,7 @@ export const ROUTES: Routes = [
     DirectionViewResolve
   ],
   exports: [
-    DirectionTypeComponent
+    DirectionTypeViewComponent
   ]
 })
 
