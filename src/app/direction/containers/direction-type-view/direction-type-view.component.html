@@ -1,24 +1,26 @@
-<div class="direction__content">
-  <nav>
-    <a
-      [routerLink]="[{ outlets: { primary: 'type/водный', type: null } }]"
-      routerLinkActive="active">
-      Водный
-    </a>
-    <a
-      [routerLink]="[{ outlets: { primary: 'type/пеший', type: null } }]"
-      routerLinkActive="active">
-      Пеший
-    </a>
-    <a
-      [routerLink]="[{ outlets: { primary: 'type/вело', type: null } }]"
-      routerLinkActive="active">
-      Вело
-    </a> <a
+<section class="direction">
+  <div class="direction_content">
+    <nav>
+      <a
+        [routerLink]="[{ outlets: { primary: 'type/водный', type: null } }]"
+        routerLinkActive="active">
+        Водные
+      </a>
+      <a
+        [routerLink]="[{ outlets: { primary: 'type/пеший', type: null } }]"
+        routerLinkActive="active">
+        Пешие
+      </a>
+      <a
+        [routerLink]="[{ outlets: { primary: 'type/вело', type: null } }]"
+        routerLinkActive="active">
+        Вело
+      </a> <a
       [routerLink]="[{ outlets: { primary: 'type/комбинированный', type: null } }]"
       routerLinkActive="active">
-      Комбинированный
+      Комбинированные
     </a>
-  </nav>
-  <app-direction-type></app-direction-type>
-</div>
+    </nav>
+    <app-direction-type></app-direction-type>
+  </div>
+</section>

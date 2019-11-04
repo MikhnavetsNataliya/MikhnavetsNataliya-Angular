@@ -1,12 +1,7 @@
 import { error, ok, sendJSON } from './helpers';
+import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
 
 import { expeditions } from './data/expeditions';
-
-import { Expedition } from '../direction/model/expedition.interface';
-
-/*export function getExpedition() {
-  return ok<Expedition[]>(expeditions);
-}*/
 
 export function getExpeditions(type) {
   return ok(expeditions.filter(expedition => expedition.type === type));

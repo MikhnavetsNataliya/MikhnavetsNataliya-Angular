@@ -20,32 +20,6 @@ import { Router } from '@angular/router';
 import { FakeBackendInterceptor } from './fake-back-end/fake-back-end.interceptor';
 
 
-/*const routes: Routes = [
-  {
-    path: '',
-    pathMatch: 'full',
-    component: HomeComponent
-  },
-  {
-    path: 'direction',
-    redirectTo: 'type/водный',
-  },
-  {
-    path: 'contact',
-    component: ContactComponent
-  },
-  {
-    path: 'about',
-    component: AboutComponent
-  },
-  {
-    path: '**',
-    component: NotFoundComponent
-  }
-
-];*/
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,7 +33,7 @@ import { FakeBackendInterceptor } from './fake-back-end/fake-back-end.intercepto
     HttpClientModule,
     AppRoutingModule,
     GeneralModule,
-    DirectionModule,
+    /*DirectionModule,*/
     FormsModule
   ],
   providers: [

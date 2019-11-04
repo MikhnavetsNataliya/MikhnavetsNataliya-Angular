@@ -2,10 +2,12 @@
   class="direction-list"
   [routerLink]="['', { outlets: { type: ['expedition', expedition.id] } }]"
   routerLinkActive="active">
+<!--
   <p>{{expidition.img}}</p>
+-->
   <h3>{{ expedition.fullname }}</h3>
   <p>{{ expedition.country}}</p>
   <p>{{ expedition.complication}}</p>
-  <p>{{ expedition.duration + 'дней'}}}</p>
-  <h4>{{ expedition.price | currency:'BLR':'code'}}</h4>
+  <p>{{ expedition.duration + 'дней'}}</p>
+  <h4>{{ expedition.price | currency:'code':'BLR'}}</h4>
 </a>

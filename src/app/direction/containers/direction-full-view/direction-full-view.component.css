@@ -1,6 +1,8 @@
 h2 {
-  font-size: 22px;
-  font-weight: 400;
+  font-size: 2em;
+  font-weight: 600;
+  color: #355c57;
   margin: 6px 30px 20px;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
