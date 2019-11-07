@@ -6,8 +6,8 @@ import {RegisterComponent} from "./register/register.component";
 import {SharedModule} from "../shared/shared.module";
 
 const routes: Routes = [
-  {path: '/auth/login', component: LoginComponent},
-  {path: '/auth/register', component: RegisterComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent},
 ];
 
 @NgModule({

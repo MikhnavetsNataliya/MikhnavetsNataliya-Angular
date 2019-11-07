@@ -14,7 +14,7 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'auth',
+    path: 'register',
     loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
   },
   {
@@ -24,13 +24,11 @@ const routes: Routes = [
     redirectTo: 'direction/type/водный'
 */
   },
-  /*{
-    path: 'direction',
-    redirectTo: 'direction/type/водный'
-  },*/
   {
     path: 'contact',
+/*
     loadChildren: () => import('./shared/shared.module').then(m => m.SharedModule),
+*/
     pathMatch: 'full',
     component: ContactComponent
   },

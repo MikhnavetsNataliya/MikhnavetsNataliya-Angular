@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -9,7 +10,11 @@ import { AlertService } from '../../shared/alert/alert.service';
   styleUrls: ['./auth.component.css']
 })
 export class AuthComponent implements OnInit {
-  isLoggedIn: boolean;
+  constructor() { }
+
+  ngOnInit() {
+  }
+  /*isLoggedIn: boolean;
   loggedInUser: string;
   showRegister: boolean;
 
@@ -37,5 +42,6 @@ export class AuthComponent implements OnInit {
     this.userService.logout();
     this.alertService.success('Вы вышли!', true );
     this.router.navigate(['/login']);
-  }
+  }*/
 }
+

@@ -1,6 +1,21 @@
-<app-auth></app-auth>
-
 <header class="header">
+  <nav class="auth">
+    <ul class="auth__nav">
+      <li *ngIf="!isLoggedIn && showRegister" class="auth__nav_item">
+        <a routerLink="/register" class="auth__nav_link">Регистрация</a>
+      </li>
+      <li *ngIf="!isLoggedIn && showRegister" class="auth__nav_item">
+        <a routerLink="/login" class="auth__nav_link">Войти</a>
+      </li>
+      <li *ngIf="isLoggedIn" class="auth__nav_item">
+        <a href="#" class="auth__nav_link">{{ loggedInUser }}</a>
+      </li>
+      <li *ngIf="isLoggedIn" class="auth__nav_item">
+        <a href="#" (click)="onLogoutClick()" class="auth__nav_link">Выйти</a>
+      </li>
+    </ul>
+  </nav>
+
   <nav class="nav">
     <!-- logo -->
     <div class="nav-logo">
@@ -22,4 +37,6 @@
        <input class="search" type="text" placeholder="Поиск">
      </div>
   </nav>
+
 </header>
+<app-auth></app-auth>
