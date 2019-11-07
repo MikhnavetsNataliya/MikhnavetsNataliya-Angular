@@ -1,8 +1,8 @@
-@import "../../assets/css/colors.css";
+@import "../../../assets/css/colors.css";
 
 .login {
   box-sizing: border-box;
-  background: url("../../assets/image/fon_2.jpg");
+  background: url("../../../assets/image/fon_2.jpg");
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
 }

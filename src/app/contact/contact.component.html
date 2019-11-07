@@ -95,12 +95,14 @@
           Введите Ваше сообщение!
         </p>
       </div>
-      <!--<button
+      <button
         class="btn"
         type="submit"
         [disabled]="!form.valid">Отправить
-      </button>-->
+      </button>
+<!--
       <app-button></app-button>
+-->
       <p *ngIf="form.invalid && form.touched" class="error">
         Пожалуйста, проверьте введенные данные!</p>
     </form>

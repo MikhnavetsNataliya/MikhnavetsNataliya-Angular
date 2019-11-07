@@ -18,10 +18,6 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
   }
 
-  /*processForm() {
-    const infoClient = `Меня зовут ${this.name}. Email ${this.email}. Телефон: ${this.phone}. Сообщение: ${this.message}`;
-    alert(infoClient);
-  }*/
   onSubmit(isValid: boolean) {
     const infoClient = `Меня зовут ${this.name}. Email ${this.email}. Телефон: ${this.phone}. Сообщение: ${this.message}`;
     alert(infoClient);
