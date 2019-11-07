@@ -1,4 +1,4 @@
-@import "../../../app.component.css";
+@import "../../../../assets/css/colors.css";
 
 .header{
   display: block;
@@ -14,7 +14,7 @@
 
 }
 
-.navbar {
+.nav {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -24,18 +24,18 @@
   width: 100%;
 }
 
-.navbar-logo img {
+.nav-logo img {
   width: 16em;
   height: 8em;
 }
 
-.navbar-start{
+.nav-start{
   display: block;
   padding: 1.05em 0;
 
 }
 
-.navbar-start_item{
+.nav-start_item{
   margin: 0.5em;
   padding: 1.05em 1.8em;
   color: #355c57;
@@ -46,15 +46,15 @@
   letter-spacing: 0.2em;
 }
 
-.navbar-start_item:hover {
+.nav-start_item:hover {
   color: #8CBD54;
 }
 
-.navbar-start_item:active {
+.nav-start_item:active {
   color: #8CBD54;
 }
 
-.navbar-start_item:focus {
+.nav-start_item:focus {
   outline: none;
   color:#8CBD54;
 }
