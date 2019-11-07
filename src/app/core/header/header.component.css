@@ -1,8 +1,8 @@
-@import "../../../../assets/css/colors.css";
+@import "../../../assets/css/colors.css";
 
 .header{
   display: block;
-  background: url(../../../../assets/image/bgd_header.jpg);
+  background: url(../../../assets/image/bgd_header.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;

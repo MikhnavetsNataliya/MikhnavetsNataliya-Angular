@@ -3,15 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { RouterModule } from '@angular/router';
 
-import { HeaderComponent } from './component/header/header.component';
-import { FooterComponent } from './component/footer/footer.component';
-import { ButtonComponent } from './container/button/button.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { AuthComponent } from "../auth/auth/auth.component";
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    ButtonComponent
+    AuthComponent
   ],
   imports: [
     CommonModule,
@@ -20,10 +20,11 @@ import { ButtonComponent } from './container/button/button.component';
   exports: [
     HeaderComponent,
     FooterComponent,
-    ButtonComponent
+    AuthComponent,
+
   ],
   providers: [
   ]
 })
 
-export class GeneralModule { }
+export class CoreModule { }
