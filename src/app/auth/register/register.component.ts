@@ -1,9 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 
 import { AlertService } from '../../shared/alert/alert.service';
 import { UserService } from '../services/user.service';
+import {User }
+from '../user.model';
 
 @Component({
   selector: 'app-register',
@@ -12,10 +14,12 @@ import { UserService } from '../services/user.service';
 })
 export class RegisterComponent implements OnInit {
   registerForm: FormGroup;
-  loading = false;
   submitted = false;
   email: string;
   password: string;
+
+  @Input()
+  user: User;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -34,12 +38,11 @@ export class RegisterComponent implements OnInit {
       password: ['', [Validators.required, Validators.minLength(6)]]
       */
       this.registerForm = new FormGroup({
-      firstName: new FormControl(null, Validators.required),
-      lastName: new FormControl(null, Validators.required),
-      username: new FormControl(null, Validators.required),
-      email: new FormControl(null, [Validators.required, Validators.email]),
-      password: new FormControl(null, [Validators.required, Validators.minLength(6)])
-
+      'firstName': new FormControl(null, Validators.required),
+      'lastName': new FormControl(null, Validators.required),
+      'username': new FormControl(null, Validators.required),
+      'email': new FormControl(null, [Validators.required, Validators.email]),
+      'password': new FormControl(null, [Validators.required, Validators.minLength(6)])
     });
   }
 
@@ -54,8 +57,6 @@ export class RegisterComponent implements OnInit {
       return;
     }
 
-    this.loading = true;
-
     this.userService.register(this.email, this.password)
       .then(success => {
           this.alertService.success('Регистрация прошла успешно', true );
@@ -63,7 +64,6 @@ export class RegisterComponent implements OnInit {
         })
       .catch(error => {
           this.alertService.error(error);
-          this.loading = false;
         });
   }
 }

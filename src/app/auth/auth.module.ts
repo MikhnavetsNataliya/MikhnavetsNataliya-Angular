@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-
+import { FormControl, FormGroup, Validators } from "@angular/forms";
 import {AuthRoutingModule} from './auth-routing.module';
 
 import {AuthComponent} from './auth/auth.component';
@@ -19,7 +19,10 @@ import {RegisterComponent} from "./register/register.component";
     CommonModule,
     AuthRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormControl,
+    FormGroup,
+    Validators
   ]
 })
 export class AuthModule {

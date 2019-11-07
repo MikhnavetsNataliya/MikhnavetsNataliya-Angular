@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { RouterModule } from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AuthComponent } from "../auth/auth/auth.component";
+import { UserService } from "../auth/services/user.service";
+
 
 @NgModule({
   declarations: [
@@ -15,7 +17,7 @@ import { AuthComponent } from "../auth/auth/auth.component";
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
   ],
   exports: [
     HeaderComponent,
@@ -24,7 +26,9 @@ import { AuthComponent } from "../auth/auth/auth.component";
 
   ],
   providers: [
+    UserService
   ]
 })
 
-export class CoreModule { }
+export class CoreModule {
+}

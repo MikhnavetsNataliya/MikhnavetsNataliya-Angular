@@ -20,7 +20,9 @@ const routes: Routes = [
   {
     path: 'direction',
     loadChildren: () => import('./direction/direction.module').then(m => m.DirectionModule),
+/*
     redirectTo: 'direction/type/водный'
+*/
   },
   /*{
     path: 'direction',
