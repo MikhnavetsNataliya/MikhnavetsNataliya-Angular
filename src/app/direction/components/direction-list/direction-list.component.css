@@ -1,3 +1,5 @@
+@import "../../../../assets/css/colors.css";
+
 :host {
   display: block;
   border-top: 1px solid #E6E6E6;
@@ -20,24 +22,29 @@
 }
 
 .direction-list h3 {
-  font-size: 18px;
+  font-size: 1.125em;
   margin: 0;
-  color: rgba(0, 0, 0, 0.8);
-  font-weight: 300;
+  color: var(--direction-list-color);
+  font-weight: 600;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .direction-list h4 {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 12px;
+  color: var(--direction-list-color-prise);
+  font-size: 1.125em;
+  text-align: right;
+  font-weight: 600;
+
 }
 
 .direction-list p {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  color: var(--direction-list-color);
+
 }
 .direction-list p.active {
   background: rgba(0, 0, 0, 0.03);

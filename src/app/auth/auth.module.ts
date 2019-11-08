@@ -20,9 +20,11 @@ import {RegisterComponent} from "./register/register.component";
     AuthRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    FormControl,
-    FormGroup,
-    Validators
+  ],
+  exports: [
+    AuthComponent,
+    LoginComponent,
+    RegisterComponent,
   ]
 })
 export class AuthModule {

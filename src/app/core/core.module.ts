@@ -5,25 +5,23 @@ import {RouterModule, Routes} from '@angular/router';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { AuthComponent } from "../auth/auth/auth.component";
 import { UserService } from "../auth/services/user.service";
+import {AuthModule} from "../auth/auth.module";
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    AuthComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
+    AuthModule
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
-    AuthComponent,
-
   ],
   providers: [
     UserService

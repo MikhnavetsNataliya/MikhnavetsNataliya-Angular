@@ -7,7 +7,7 @@
         Водные
       </a>
       <a
-        [routerLink]="[{ outlets: { primary: 'type/пеший', type: null } }]"
+        [routerLink]="[{ outlets: { primary: 'type/горный', type: null } }]"
         routerLinkActive="active">
         Пешие
       </a>
@@ -15,11 +15,17 @@
         [routerLink]="[{ outlets: { primary: 'type/вело', type: null } }]"
         routerLinkActive="active">
         Вело
-      </a> <a
-      [routerLink]="[{ outlets: { primary: 'type/комбинированный', type: null } }]"
-      routerLinkActive="active">
-      Комбинированные
-    </a>
+      </a>
+      <a
+        [routerLink]="[{ outlets: { primary: 'type/комбинированный', type: null } }]"
+        routerLinkActive="active">
+        Комбинированные
+      </a>
+      <a
+        [routerLink]="[{ outlets: { primary: 'type/выходного_дня', type: null } }]"
+        routerLinkActive="active">
+        Выходного дня
+      </a>
     </nav>
     <app-direction-type></app-direction-type>
   </div>

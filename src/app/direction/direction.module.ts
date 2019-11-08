@@ -54,6 +54,10 @@ export const ROUTES: Routes = [
     DirectionViewResolve
   ],
   exports: [
+    DirectionTypeComponent,
+    DirectionListComponent,
+    DirectionViewComponent,
+    DirectionFullViewComponent,
     DirectionTypeViewComponent
   ]
 })

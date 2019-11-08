@@ -28,9 +28,7 @@ import { AboutComponent } from './about/about.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 import { FakeBackendInterceptor } from './fake-back-end/fake-back-end.interceptor';
-import { AlertComponent } from './shared/alert/alert.component';
-import { RegisterComponent } from './auth/register/register.component';
-import { LoginComponent } from './auth/login/login.component';
+
 
 
 @NgModule({
@@ -40,9 +38,6 @@ import { LoginComponent } from './auth/login/login.component';
     ContactComponent,
     AboutComponent,
     NotFoundComponent,
-    RegisterComponent,
-    AlertComponent,
-    LoginComponent,
     /*FlashMessagesModule*/
   ],
   imports: [

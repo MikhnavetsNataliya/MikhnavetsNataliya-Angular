@@ -7,8 +7,5 @@ import { Router } from '@angular/router';
   styleUrls: ['./direction-type-view.component.css']
 })
 export class DirectionTypeViewComponent {
-/*
   constructor(private router: Router);
-*/
-
 }

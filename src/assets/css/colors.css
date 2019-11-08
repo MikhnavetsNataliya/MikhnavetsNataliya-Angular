@@ -27,4 +27,7 @@
   --login-form-label-color: var(--finch);
   --login-form-btn-bgd: var(--oracle);
 
+  /*-----Direction-list-----*/
+  --direction-list-color: var(--fern-green);
+  --direction-list-color-prise: var(--oracle);
 }

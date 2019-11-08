@@ -2,12 +2,9 @@
   class="direction-list"
   [routerLink]="['', { outlets: { type: ['expedition', expedition.id] } }]"
   routerLinkActive="active">
-<!--
-  <p>{{expidition.img}}</p>
--->
-  <h3>{{ expedition.fullname }}</h3>
-  <p>{{ expedition.country}}</p>
-  <p>{{ expedition.complication}}</p>
-  <p>{{ expedition.duration + 'дней'}}</p>
-  <h4>{{ expedition.price | currency:'code':'BLR'}}</h4>
+  <h3><u>{{ expedition.fullname }}</u></h3>
+  <p><span><strong>Страна</strong></span>: {{ expedition.country}}</p>
+  <p><span><strong>Сложность</strong></span>: {{ expedition.complication}}</p>
+  <p><span><strong>Длительность</strong></span>: {{ expedition.duration + 'дн.'}}</p>
+  <h4><span>{{ expedition.price | currency:'code':'BLR'}}</span></h4>
 </a>

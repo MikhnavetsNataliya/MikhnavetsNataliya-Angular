@@ -49,8 +49,6 @@
   color:#8CBD54;
 }
 
-
-
 .header{
   display: block;
   background: url(../../../assets/image/bgd_header.jpg);
@@ -62,7 +60,6 @@
   height: 100vh;
   color: var(--header-text-color);
   margin: 0;
-
 }
 
 .nav {
