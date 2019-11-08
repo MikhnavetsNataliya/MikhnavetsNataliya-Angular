@@ -1,9 +1,8 @@
 @import "../../../assets/css/colors.css";
 
-
 .auth-form__card{
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   top:0;
   left:0;
   bottom: 0;
@@ -103,7 +102,7 @@
 
 .form-group input:focus {
   outline: 0;
-  border-color: var(--login-form-input-border-color);
+  border-color: #F77A52;
 }
 
 .form-group input:focus + label,
@@ -113,8 +112,8 @@
   font-size: 0.875em;
   font-weight: 400;
   outline: 0;
-  border-color: var(--login-form-input-border-color);
-  color: var(--login-form-input-color);
+  border-color: #F77A52;
+  color: #F77A52;
 }
 
 .login__form input[type="submit"] {
@@ -130,10 +129,4 @@
 .login__form p {
   margin: 0;
   padding-top: 0.625em;
-}
-
-.invalid-feedback {
-  font-size: 0.875em;
-  font-weight: 400;
-  color: red;
 }

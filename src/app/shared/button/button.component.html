@@ -1,8 +1,10 @@
-<button
+<!--<button
   class="btn" type="submit"
-  [disabled]="form.invalid">
+  [disabled]="!form.invalid">
   Отправить
-</button>
+</button>-->
+
+<ng-content select="button" class="btn"></ng-content>
 
 <!--
 

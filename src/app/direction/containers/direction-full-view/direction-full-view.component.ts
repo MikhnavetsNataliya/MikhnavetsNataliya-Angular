@@ -12,7 +12,25 @@ import { pluck } from 'rxjs/operators';
   styleUrls: ['./direction-full-view.component.css']
 })
 export class DirectionFullViewComponent {
+
+
   expeditions: Observable<Expedition[]> = this.route.data.pipe(pluck('expeditions'));
   title: Observable<string> = this.route.params.pipe(pluck('name'));
+
   constructor(private route: ActivatedRoute) {}
+
+ /* items = [];
+    ngOnInit() {
+    // an example array of 150 items to be paged
+    this.items = Array(150).fill(0).map((x, i) => ({ id: (i + 1), name: `Item ${i + 1}`}));
+  }
+
+  onChangePage(expeditions: Array<any>) {
+    // update current page of items
+    this.expedition = expeditions;
+  }*/
  }
+
+
+
+

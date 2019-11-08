@@ -1,0 +1,11 @@
+<app-auth-field-common
+  (submitted)="loginUser($event)">
+  <h3>Регистрация</h3>
+  <button
+    [disabled]="!loginForm.valid"
+    name="submit"
+    class="btn btn-primary">Зарегистрироваться
+  </button>
+  <a routerLink="/login" class="btn btn-link">Отмена</a>
+</app-auth-field-common>
+

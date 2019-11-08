@@ -44,9 +44,4 @@
   white-space: nowrap;
   overflow: hidden;
   color: var(--direction-list-color);
-
-}
-.direction-list p.active {
-  background: rgba(0, 0, 0, 0.03);
-  border-left-color: #9f72e6;
 }

@@ -7,9 +7,7 @@ import { map, tap } from 'rxjs/operators';
 
 import { Expedition } from '../model/expedition.interface';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class DirectionService {
 
   constructor(private http: HttpClient) { }

@@ -1,0 +1,11 @@
+<div class="auth-form">
+  <app-auth-field-common
+    (submitted)="createUser($event)">
+    <h3>Войти на сайт</h3>
+    <button
+      name="submit"
+      class="btn">Войти
+    </button>
+    <a routerLink="/register" class="btn-link">Регистрация</a>
+  </app-auth-field-common>
+</div>

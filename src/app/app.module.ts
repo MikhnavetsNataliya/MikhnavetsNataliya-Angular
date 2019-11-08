@@ -13,7 +13,6 @@ import { environment } from '../environments/environment';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireAuthModule } from 'angularfire2/auth';
-
 /*
 import {FlashMessagesModule} from 'angular2-flash-messages';
 */
@@ -30,7 +29,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { FakeBackendInterceptor } from './fake-back-end/fake-back-end.interceptor';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +36,7 @@ import { FakeBackendInterceptor } from './fake-back-end/fake-back-end.intercepto
     ContactComponent,
     AboutComponent,
     NotFoundComponent,
+  
     /*FlashMessagesModule*/
   ],
   imports: [

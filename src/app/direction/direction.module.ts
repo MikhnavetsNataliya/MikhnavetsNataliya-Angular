@@ -11,6 +11,7 @@ import {DirectionTypeViewComponent} from './containers/direction-type-view/direc
 import {DirectionViewResolve} from './components/direction-view/direction-view.resolve';
 import {DirectionFullViewResolve} from './containers/direction-full-view/direction-full-view.resolve';
 import {DirectionService} from './services/direction.service';
+import { JwPaginationComponent } from 'jw-angular-pagination';
 
 export const ROUTES: Routes = [
   {
@@ -39,14 +40,16 @@ export const ROUTES: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(ROUTES)
+    RouterModule.forChild(ROUTES),
+
   ],
   declarations: [
     DirectionTypeComponent,
     DirectionListComponent,
     DirectionViewComponent,
     DirectionFullViewComponent,
-    DirectionTypeViewComponent
+    DirectionTypeViewComponent,
+    JwPaginationComponent
   ],
   providers: [
     DirectionService,
@@ -54,10 +57,6 @@ export const ROUTES: Routes = [
     DirectionViewResolve
   ],
   exports: [
-    DirectionTypeComponent,
-    DirectionListComponent,
-    DirectionViewComponent,
-    DirectionFullViewComponent,
     DirectionTypeViewComponent
   ]
 })

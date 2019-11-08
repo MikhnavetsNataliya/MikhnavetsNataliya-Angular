@@ -5,8 +5,13 @@ import {RouterModule, Routes} from '@angular/router';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+/*
 import { UserService } from "../auth/services/user.service";
+*/
 import {AuthModule} from "../auth/auth.module";
+
+import { UserService } from "../auth-form/services/user.service";
+import { AuthFormModule } from "../auth-form/auth-form.module";
 
 
 @NgModule({
@@ -17,7 +22,10 @@ import {AuthModule} from "../auth/auth.module";
   imports: [
     CommonModule,
     RouterModule,
-    AuthModule
+/*
+    AuthModule,
+*/
+    AuthFormModule
   ],
   exports: [
     HeaderComponent,

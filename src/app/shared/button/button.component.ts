@@ -6,7 +6,5 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./button.component.css']
 })
 export class ButtonComponent {
-/*
-  send: boolean=true;*/
 
 }

@@ -1,6 +1,6 @@
-:host {
+section {
   display: flex;
-  width: 100%;
+  width: 120em;
 }
 
 .direction {

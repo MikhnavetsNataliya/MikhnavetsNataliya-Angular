@@ -15,20 +15,18 @@ const routes: Routes = [
   },
   {
     path: 'auth',
-    loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
+    loadChildren: () => import('./auth-form/auth-form.module').then(m => m.AuthFormModule)
+
+    /*
+        loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
+    */
   },
   {
     path: 'direction',
     loadChildren: () => import('./direction/direction.module').then(m => m.DirectionModule),
-/*
-    redirectTo: 'direction/type/водный'
-*/
   },
   {
     path: 'contact',
-/*
-    loadChildren: () => import('./shared/shared.module').then(m => m.SharedModule),
-*/
     pathMatch: 'full',
     component: ContactComponent
   },
@@ -41,11 +39,7 @@ const routes: Routes = [
     path: '**',
     pathMatch: 'full',
     component: NotFoundComponent
-  },
-  /*{
-    path: 'users',
-    loadChildren: () => import('app/users/users.module').then(m => m.UsersModule)
-  }*/
+  }
 ];
 
 @NgModule({
