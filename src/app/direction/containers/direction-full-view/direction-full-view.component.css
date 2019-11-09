@@ -1,0 +1,11 @@
+@import "../../../../assets/css/colors.css";
+
+h2 {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: var(--direction-full-view-color);
+  margin: 0.372em 1.875em 1.25em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+}

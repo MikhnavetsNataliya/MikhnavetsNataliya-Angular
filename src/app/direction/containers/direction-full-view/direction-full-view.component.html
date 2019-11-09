@@ -1,0 +1,5 @@
+<h2>{{ title | async }} тур</h2>
+<app-direction-list
+  *ngFor="let expedition of (expeditions | async)"
+  [expedition]="expedition">
+</app-direction-list>

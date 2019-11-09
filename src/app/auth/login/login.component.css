@@ -1,0 +1,115 @@
+@import "../../../assets/css/colors.css";
+
+.auth-form__card{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  top:0;
+  left:0;
+  bottom: 0;
+  right: 0;
+}
+
+.close {
+  margin-right: -0.625em;
+  color: #aaaaaa;
+  text-align: right;
+  font-size:  2.188em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.auth-form__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 30em;
+  padding: 0 1.875em 1.875em;
+  margin: 3.125em auto 1.875em;
+  background: var(--login-form-bgd);
+}
+
+.auth-form__form h3 {
+  position: relative;
+  z-index: 5;
+  margin: 1.875em 0 4.75em;
+  text-align: center;
+  color: var(--login-form-h3);
+  font-size: 1.875em;
+  font-weight: bold;
+}
+
+.auth-form__form h3:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 3em;
+  top: -0.575em;
+  background: url("../../../assets/image/vandrounik_logo.png") ;
+  background-repeat:no-repeat;
+  background-size: 10em 5em;
+  opacity: 0.2;
+  width: 10em;
+  height: 6.25em;
+}
+
+.form-group_btn{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 2.5em;
+}
+
+.form-group input {
+  display: block;
+  width: 100%;
+  line-height: 2.5em;
+  font-family: 'Roboto', sans-serif;
+  background: none;
+  border-width: 0;
+  border-bottom: 0.125em solid var(--login-form-border-bottom);
+  transition: all 0.2s ease;
+}
+
+.form-group label {
+  position: absolute;
+  left: 0.813em;
+  color: var(--login-form-label-color);
+  font-size: 1.25em;
+  font-weight: 300;
+  transform: translateY(-2.2em);
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus {
+  outline: 0;
+  border-color: var(--login-form-input-border-color);
+}
+
+.form-group input:focus + label,
+.form-group input:valid + label {
+  transform: translateY(-3.75em);
+  margin-left: -0.875em;
+  font-size: 0.875em;
+  font-weight: 400;
+  outline: 0;
+  border-color: var(--login-form-input-border-color);
+  color: var(--login-form-input-color);
+}
+
+.invalid-feedback {
+  font-size: 0.875em;
+  font-weight: 400;
+  color: red;
+  text-align: right;
+}

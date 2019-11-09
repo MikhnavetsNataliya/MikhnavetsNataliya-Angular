@@ -1,1 +1,86 @@
-/* You can add global styles to this file, and also import other style files */
+@import url(./assets/css/colors.css);
+
+body {
+  margin: 0;
+  font-family: Rubic sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  cursor: pointer
+}
+
+.btn {
+  margin: 3.125em 1.25em;
+  padding: 0.625em 1.875em;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--button-border);
+  border-radius: 0.5em;
+  font-size: 1em;
+  font-family: Rubic, sans-serif;
+  color: var(--button-color);
+  transition: .2s ease-in-out;
+  background-color: var(--button-bgd-color);
+}
+
+.btn:before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+  height: 3.125em;
+  width: 3.125em;
+  position: absolute;
+  top: -0.5em;
+  left: -4.68em;
+  transform: skewX(-45deg);
+}
+
+.btn:hover {
+  background: var(--button-bgd-color-hover);
+  color: var(--button-color-hover);
+}
+
+.btn:hover:before {
+  left: 9.375em;
+  transition: .5s ease-in-out;
+}
+
+.btn-link {
+  width: 7em;
+  margin: 3.125em 1.25em;
+  padding: 0.625em 1.875em;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--button-border);
+  border-radius: 0.5em;
+  font-family: Rubic, sans-serif;
+  text-align: center;
+  color: var(--button-color);
+  transition: .2s ease-in-out;
+  background-color: var(--button-bgd-color);
+}
+
+.btn-link:before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+  height: 3.125em;
+  width: 3.125em;
+  position: absolute;
+  top: -0.5em;
+  left: -4.688em;
+  transform: skewX(-45deg);
+}
+
+.btn-link:hover {
+  background: var(--button-bgd-color-hover);
+  color: var(--button-color-hover);
+}
+
+.btn-link:hover:before {
+  left: 9.375em;
+  transition: .5s ease-in-out;
+}

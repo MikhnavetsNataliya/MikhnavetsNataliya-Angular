@@ -1,0 +1,128 @@
+@import "../../../assets/css/colors.css";
+@import "../../../styles.css";
+
+.auth {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.auth__nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.auth__nav_item:first-child {
+  border-right: 1px solid black;
+}
+
+.auth__nav_item {
+  display: block;
+  padding: 0.5em 0;
+}
+
+.auth__nav_link {
+  margin: 0.5em;
+  padding: 1.05em 1.8em;
+  color: #355c57;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+.auth__nav_link:hover {
+  color: #8CBD54;
+}
+
+.auth__nav_link:active {
+  color: #8CBD54;
+}
+
+.auth__nav_link:focus {
+  outline: none;
+  color: #8CBD54;
+}
+
+.header {
+  display: block;
+  background: url(../../../assets/image/bgd_header.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.75;
+  width: 100%;
+  height: 100vh;
+  color: var(--header-text-color);
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2em 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.nav-logo img {
+  width: 16em;
+  height: 8em;
+}
+
+.nav-start {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.05em 0;
+}
+
+.nav-start_item {
+  margin: 0.5em;
+  padding: 1.05em 1.8em;
+  color: #355c57;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+.nav-start_item:hover {
+  color: #8CBD54;
+}
+
+.nav-start_item:active {
+  color: #8CBD54;
+}
+
+.nav-start_item:focus {
+  outline: none;
+  color: #8CBD54;
+}
+
+
+@media (max-width: 600px) {
+  .auth__nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 0;
+  }
+
+  .auth__nav_item:first-child {
+    border-right: 0;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,114 @@
+<section class="contacts">
+  <section class="contact">
+    <section class="contact-item">
+      <h4 class="contact-item__title">Телефон</h4>
+      <p class="contact-item__content">
+        <a class="contact-item__link" href="tel:+37529123456789" title="Телефон A1">+375 (29)
+          123-45-67</a>
+      </p>
+      <p class="contact-item__content">
+        <a class="contact-item__link" href="tel:+37533123456789" title="Телефон МТС">+375 (33)
+          123-45-67</a>
+      </p>
+    </section>
+    <section class="contact-item">
+      <h4 class="contact-item__title">Адрес</h4>
+      <p class="contact-item__content">а.г.Раков, ул.Майская</p>
+      <p class="contact-item__content">GPS: 53.959684, 27.040977</p>
+    </section>
+    <section class="contact-item">
+      <h4 class="contact-item__title">E-mail</h4>
+      <p class="contact-item__content">
+        <a class="contact-item__link" tabindex="10" href="mailto:info@autopoin.org"
+           title="E-mail">info@vandrounic.org</a>
+      </p>
+    </section>
+    <section class="contact-item">
+      <h4 class="contact-item__title">Время работы</h4>
+      <p class="contact-item__content">ПН-ПТ: 8.00 - 17.00</p>
+      <p class="contact-item__content">СБ-ВС: 8.00 - 23.00</p>
+    </section>
+  </section>
+</section>
+
+<section class="section">
+  <div class="container">
+    <form (ngSubmit)="onSubmit(form.value)" #form="ngForm" class="container_form">
+      <div class="container_top">
+        <div class="field">
+          <label for="name"></label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            class="input"
+            placeholder="Введите Имя"
+            [(ngModel)]="name"
+            required
+            minlength="2"
+            #nameInput="ngModel">
+          <p class="help error" *ngIf="nameInput.invalid && nameInput.dirty">
+            Введите ваше имя (не менее двух символов)!
+          </p>
+        </div>
+        <div class="field">
+          <input
+            type="email"
+            name="email"
+            class="input"
+            placeholder="Введите e-mail"
+            [(ngModel)]="email"
+            required
+            email
+            #emailInput="ngModel">
+          <p class="help error" *ngIf="emailInput.invalid && emailInput.dirty">
+            Введите корректный email!
+          </p>
+        </div>
+        <div class="field">
+          <input
+            type="text"
+            name="phone"
+            class="input"
+            placeholder="Введите телефон"
+            [(ngModel)]="phone"
+            required
+            phone
+            #phoneInput="ngModel">
+          <p class="help error" *ngIf="phoneInput.invalid && phoneInput.dirty">
+            Введите корректный номер телефона!
+          </p>
+        </div>
+      </div>
+      <div class="field field_textarea">
+          <textarea
+            class="textarea"
+            name="message"
+            placeholder="Сообщение"
+            rows="10"
+            cols="165"
+            [(ngModel)]="message"
+            required
+            #messageInput="ngModel"></textarea>
+        <p class="help error" *ngIf="messageInput.invalid && messageInput.dirty">
+          Введите Ваше сообщение!
+        </p>
+      </div>
+      <div class="container_top">
+        <button
+          class="btn"
+          type="submit"
+          [disabled]="!form.valid">Отправить
+        </button>
+        <p *ngIf="form.invalid && form.touched" class="error">
+          Пожалуйста, проверьте введенные данные!</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<iframe id="map_contact" class="contact-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4695.58583727244!2d27.04741097945582!3d53.953185870442674!2
+  m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbe5c9c050edcd%3A0xdb43e1529054f511!2z0KDQsNC60L7Qsg!5e0!3m2!1sru
+  !2sby!4v1571344905735!5m2!1sru!2sby"
+        width="600" height="450" frameborder="1" allowfullscreen="true"></iframe>

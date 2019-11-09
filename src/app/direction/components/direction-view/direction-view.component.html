@@ -1,0 +1,14 @@
+<div class="direction-view">
+<!--
+  <img src={{ (expedition | async).img }}></img>
+-->
+  <p>{{ (expedition | async).type }}</p>
+  <h3>{{ (expedition | async).fullname }}</h3>
+  <p>{{ (expedition | async).country}}</p>
+  <p>{{ (expedition | async).complication}}</p>
+  <p>{{ (expedition | async).duration + 'дн.' }}</p>
+  <p>{{ (expedition | async).groupSize}}</p>
+  <p>{{ (expedition | async).instructor}}</p>
+  <h4>{{ (expedition | async).price | currency:'BLR':'code'}}</h4>
+  <p>{{ (expedition | async).generalInformation}}</p>
+</div>

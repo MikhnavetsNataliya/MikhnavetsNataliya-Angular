@@ -1,0 +1,51 @@
+@import "./../../app/app.component.css";
+
+:root {
+  --honeydew: #f9faf9;
+  --gainsboro: #e1e1e1;
+  --finch: #7a8b4f;
+  --fern-green: #4f7b46;
+  --oracle: #355c57;
+  --solid-pink: #8e5157;
+
+  /*-----Common-----*/
+  --text-color: var(--oracle);
+
+  /*-----Header-----*/
+  --header-text-color: var(--finch);
+
+  /*-----Footer-----*/
+  --footer-bgd-color: var(--oracle);
+  --footer-color-hover: var(--honeydew);
+
+  /*-----Button-----*/
+  --button-bgd-color: var( --honeydew);
+  --button-border: var( --finch);
+  --button-color: var( --finch);
+  --button-bgd-color-hover: var( --finch);
+  --button-color-hover: var( --honeydew);
+
+  /*-----Login-----*/
+  --login-form-bgd: var(--gainsboro);
+  --login-form-h3: var(--oracle);
+  --login-form-border-bottom: var(--oracle);
+  --login-form-label-color: var(--finch);
+  --login-form-btn-bgd: var(--oracle);
+  --login-form-input-color: var(--solid-pink);
+  --login-form-input-border-color: var(--solid-pink);
+
+  /*-----Contact-----*/
+  --contact-color:var(--oracle);
+  --contact-bgd-color:var(--gainsboro);
+  --contact-border-color:var(--fern-green);
+
+  /*-----Direction-----*/
+  --direction-list-color: var(--fern-green);
+  --direction-list-color-prise: var(--oracle);
+  --direction-full-view-color: var(--oracle);
+
+  /*-----Not-found-----*/
+  --direction-bgd-color: var(--gainsboro);
+  --direction-border-color: var(--oracle);
+  --direction-color: var(--solid-pink);
+}
