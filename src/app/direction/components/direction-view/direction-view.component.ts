@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
-import { ActivatedRoute } from '@angular/router';
+import {ActivatedRoute} from '@angular/router';
 
-import { Expedition } from '../../model/expedition.interface';
+import {Expedition} from '../../model/expedition.interface';
 
-import { Observable } from 'rxjs';
-import { pluck } from 'rxjs/operators';
+import {Observable} from 'rxjs';
+import {pluck} from 'rxjs/operators';
 
 @Component({
   selector: 'app-direction-view',

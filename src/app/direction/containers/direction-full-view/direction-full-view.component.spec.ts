@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { DirectionFullViewComponent } from './direction-full-view.component';
+import {DirectionFullViewComponent} from './direction-full-view.component';
 
 describe('DirectionFullViewComponent', () => {
   let component: DirectionFullViewComponent;
@@ -8,9 +8,9 @@ describe('DirectionFullViewComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DirectionFullViewComponent ]
+      declarations: [DirectionFullViewComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

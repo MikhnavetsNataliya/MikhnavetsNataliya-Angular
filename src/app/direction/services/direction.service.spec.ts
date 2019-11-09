@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { DirectionService } from './direction.service';
+import {DirectionService} from './direction.service';
 
 describe('DirectionService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));

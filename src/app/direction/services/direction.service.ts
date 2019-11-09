@@ -1,19 +1,20 @@
-import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
+import {Injectable} from '@angular/core';
+import {HttpClient, HttpParams} from '@angular/common/http';
 
-import { Observable } from 'rxjs';
-import { map, tap } from 'rxjs/operators';
+import {Observable} from 'rxjs';
+import {map, tap} from 'rxjs/operators';
 
 
-import { Expedition } from '../model/expedition.interface';
+import {Expedition} from '../model/expedition.interface';
 
 @Injectable()
 export class DirectionService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+  }
 
   getFullView(type: string): Observable<Expedition[]> {
-    const options = { params: new HttpParams().set('type', type) };
+    const options = {params: new HttpParams().set('type', type)};
 
     return this.http
       .get(`/api/expeditions`, options)

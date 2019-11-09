@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { DirectionTypeViewComponent } from './direction-type-view.component';
+import {DirectionTypeViewComponent} from './direction-type-view.component';
 
 describe('DirectionTypeViewComponent', () => {
   let component: DirectionTypeViewComponent;
@@ -8,9 +8,9 @@ describe('DirectionTypeViewComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DirectionTypeViewComponent ]
+      declarations: [DirectionTypeViewComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
