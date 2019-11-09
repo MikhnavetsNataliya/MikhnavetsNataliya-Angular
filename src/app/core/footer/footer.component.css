@@ -1,3 +1,5 @@
+@import url(../../../assets/css/colors.css);
+
 .footer {
   display: block;
   background-color: #8CBD54;
@@ -26,7 +28,7 @@
   height: 7em;
 }
 
-.container__contact{
+.container__contact {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -34,23 +36,23 @@
   font-size: 1em;
 }
 
-.container__contact_item{
+.container__contact_item {
   text-decoration: none;
-  color: #355c57;
+  color: var(--footer-bgd-color);
 }
 
 .container__contact_item:hover,
 .container__contact_item:active,
 .container__contact_item:focus {
-  color: #f9faf9;
+  color: var(--footer-color-hover);
 }
 
 .container__contact_item:focus {
   outline: none;
 }
 
-.container__social-network img{
-  padding: 2.5em .5em ;
+.container__social-network img {
+  padding: 2.5em .5em;
   width: 2.5em;
   height: 2.5em;
 }
