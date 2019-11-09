@@ -46,7 +46,6 @@ import { FakeBackendInterceptor } from './fake-back-end/fake-back-end.intercepto
     AngularFirestoreModule,
     AngularFireAuthModule,
     AppRoutingModule,
-    /*FlashMessagesModule*/
   ],
   providers: [
     {

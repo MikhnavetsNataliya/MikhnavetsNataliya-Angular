@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Router, NavigationEnd} from '@angular/router';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-direction-type-view',
@@ -7,7 +7,7 @@ import {Router, NavigationEnd} from '@angular/router';
   styleUrls: ['./direction-type-view.component.css']
 })
 export class DirectionTypeViewComponent {
-  /*
+/*
     constructor(private router: Router);
-  */
+*/
 }
