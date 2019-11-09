@@ -1,57 +1,74 @@
-<section>
-  <h2>Регистрация</h2>
-  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-    <div class="form-group">
-      <input id="firstName" type="text" formControlName="firstName" class="form-control"
-             [ngClass]="{ 'is-invalid': submitted && formField.firstName.errors }"/>
-      <label for="firstName">Имя</label>
-
-      <div *ngIf="submitted && formField.firstName.errors" class="invalid-feedback">
-        <div *ngIf="formField.firstName.errors.required">Введите Ваше имя!</div>
+<div class="auth-form__card"></div>
+<section class="auth-form">
+  <div class="auth-form__card">
+    <form [formGroup]="registerForm"
+          (ngSubmit)="onSubmit()"
+          class="auth-form__form">
+      <a routerLink="/" class="close">&times;</a>
+      <h3>Регистрация</h3>
+      <div class="form-group">
+        <input id="firstName"
+               type="text"
+               formControlName="firstName"
+               class="form-control"
+               [ngClass]="{ 'is-invalid': submitted && formField.firstName.errors }"/>
+        <label for="firstName">Имя</label>
+        <div *ngIf="submitted && formField.firstName.errors" class="invalid-feedback">
+          <div *ngIf="formField.firstName.errors.required">Введите Ваше имя!</div>
+        </div>
       </div>
-    </div>
-    <div class="form-group">
-      <input id="lastName" type="text" formControlName="lastName" class="form-control"
-             [ngClass]="{ 'is-invalid': submitted && formField.lastName.errors }"/>
-      <label for="lastName">Фамилия</label>
-      <div *ngIf="submitted && formField.lastName.errors" class="invalid-feedback">
-        <div *ngIf="formField.lastName.errors.required">Введите Вашу фамилию!</div>
+      <div class="form-group">
+        <input id="lastName"
+               type="text"
+               formControlName="lastName"
+               class="form-control"
+               [ngClass]="{ 'is-invalid': submitted && formField.lastName.errors }"/>
+        <label for="lastName">Фамилия</label>
+        <div *ngIf="submitted && formField.lastName.errors" class="invalid-feedback">
+          <div *ngIf="formField.lastName.errors.required">Введите Вашу фамилию!</div>
+        </div>
       </div>
-    </div>
-    <div class="form-group">
-      <input id="username" type="text" formControlName="username" class="form-control"
-             [ngClass]="{ 'is-invalid': submitted && formField.username.errors }"/>
-      <label for="username">Имя пользователя</label>
-      <div *ngIf="submitted && formField.username.errors" class="invalid-feedback">
-        <div *ngIf="formField.username.errors.required">Введите имя пользователя!</div>
+      <div class="form-group">
+        <input id="username"
+               type="text"
+               formControlName="username"
+               class="form-control"
+               [ngClass]="{ 'is-invalid': submitted && formField.username.errors }"/>
+        <label for="username">Имя пользователя</label>
+        <div *ngIf="submitted && formField.username.errors" class="invalid-feedback">
+          <div *ngIf="formField.username.errors.required">Введите имя пользователя!</div>
+        </div>
       </div>
-    </div>
-    <div class="form-group">
-      <input id="email" type="text" formControlName="email" class="form-control"
-             [ngClass]="{ 'is-invalid': submitted && formField.email.errors }"/>
-      <label for="email">E-mail</label>
-      <div *ngIf="submitted && formField.username.errors" class="invalid-feedback">
-        <div *ngIf="formField.email.errors.required">Введите Ваш e-mail!</div>
+      <div class="form-group">
+        <input id="email"
+               type="text"
+               formControlName="email"
+               class="form-control"
+               [ngClass]="{ 'is-invalid': submitted && formField.email.errors }"/>
+        <label for="email">E-mail</label>
+        <div *ngIf="submitted && formField.username.errors" class="invalid-feedback">
+          <div *ngIf="formField.email.errors.required">Введите Ваш e-mail!</div>
+        </div>
       </div>
-    </div>
-    <div class="form-group">
-      <input id="password" type="password" formControlName="password" class="form-control"
-             [ngClass]="{ 'is-invalid': submitted && formField.password.errors }"/>
-      <label for="password">Пароль</label>
-      <div *ngIf="submitted && formField.password.errors" class="invalid-feedback" minlength="6">
-        <div *ngIf="formField.password.errors.required">Введите пароль!</div>
-        <div *ngIf="formField.password.errors.minlength">Пароль должен состоять не менее 6 символов!</div>
+      <div class="form-group">
+        <input id="password"
+               type="password"
+               formControlName="password"
+               class="form-control"
+               [ngClass]="{ 'is-invalid': submitted && formField.password.errors }"/>
+        <label for="password">Пароль</label>
+        <div *ngIf="submitted && formField.password.errors" class="invalid-feedback" minlength="6">
+          <div *ngIf="formField.password.errors.required">Введите пароль!</div>
+          <div *ngIf="formField.password.errors.minlength">Пароль должен состоять не менее 6 символов!</div>
+        </div>
       </div>
-    </div>
-    <div class="form-group">
-      <ng-template #register></ng-template>
-<!--      <button [disabled]="loading" class="btn btn-primary">Регистрация</button>
-      -->
-<!--
-      <ng-template #cansel ></ng-template>
--->
-
-      <a routerLink="/login" class="btn btn-link"><ng-template #cansel ></ng-template></a>
-    </div>
-  </form>
+      <div class="form-group form-group_btn">
+        <button [disabled]="!registerForm.value" class="btn">Зарегистрироваться</button>
+          <div class="btn-link" routerLink="/login">
+            <a>Отмена</a>
+          </div>
+        </div>
+    </form>
+  </div>
 </section>
+
