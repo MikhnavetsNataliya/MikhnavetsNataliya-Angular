@@ -13,9 +13,6 @@ import { environment } from '../environments/environment';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireAuthModule } from 'angularfire2/auth';
-/*
-import {FlashMessagesModule} from 'angular2-flash-messages';
-*/
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -37,7 +34,6 @@ import { FakeBackendInterceptor } from './fake-back-end/fake-back-end.intercepto
     AboutComponent,
     NotFoundComponent,
   
-    /*FlashMessagesModule*/
   ],
   imports: [
     BrowserModule,

@@ -6,20 +6,16 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from "./about/about.component";
 import { NotFoundComponent } from "./not-found/not-found.component";
-
+import {AuthGuard} from "./core/auth.guard";
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
   },
   {
     path: 'auth',
-    loadChildren: () => import('./auth-form/auth-form.module').then(m => m.AuthFormModule)
-
-    /*
-        loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
-    */
+    loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
   },
   {
     path: 'direction',
@@ -33,6 +29,7 @@ const routes: Routes = [
   {
     path: 'about',
     pathMatch: 'full',
+    canActivate: [AuthGuard],
     component: AboutComponent
   },
   {
@@ -45,7 +42,15 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    RouterModule.forRoot(routes)
+  ],
+  exports: [
+    RouterModule
+  ],
+  providers: [
+    AuthGuard
+  ]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+
+}

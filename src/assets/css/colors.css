@@ -14,7 +14,12 @@
   /*-----Header-----*/
   --header-text-color: var(--finch);
 
+  /*-----Footer-----*/
+  --footer-bgd-color: var(--oracle);
+  --footer-color-hover: var(--honeydew);
+
   /*-----Button-----*/
+  --button-bgd-color: var( --honeydew);
   --button-border: var( --finch);
   --button-color: var( --finch);
   --button-bgd-color-hover: var( --finch);
@@ -29,9 +34,18 @@
   --login-form-input-color: var(--solid-pink);
   --login-form-input-border-color: var(--solid-pink);
 
+  /*-----Contact-----*/
+  --contact-color:var(--oracle);
+  --contact-bgd-color:var(--gainsboro);
+  --contact-border-color:var(--fern-green);
+
   /*-----Direction-----*/
   --direction-list-color: var(--fern-green);
   --direction-list-color-prise: var(--oracle);
-
   --direction-full-view-color: var(--oracle);
+
+  /*-----Not-found-----*/
+  --direction-bgd-color: var(--gainsboro);
+  --direction-border-color: var(--oracle);
+  --direction-color: var(--solid-pink);
 }
