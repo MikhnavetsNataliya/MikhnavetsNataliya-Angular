@@ -27,7 +27,6 @@ export const ROUTES: Routes = [
       {
         path: 'expedition/:id',
         component: DirectionViewComponent,
-        outlet: 'type',
         resolve: {
           expedition: DirectionViewResolve
         }

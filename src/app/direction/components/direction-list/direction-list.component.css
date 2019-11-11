@@ -1,14 +1,5 @@
 @import "../../../../assets/css/colors.css";
 
-:host {
-  display: block;
-  border-top: 1px solid #E6E6E6;
-}
-
-:host:last-child {
-  border-bottom: 1px solid #E6E6E6;
-}
-
 .direction-list {
   display: block;
   padding: 15px 30px 15px 25px;
@@ -18,7 +9,7 @@
 }
 
 .direction-list:hover {
-  background: rgba(0, 0, 0, 0.02);
+  background: rgba(122, 139, 79, 0.2);
 }
 
 .direction-list h3 {
@@ -36,7 +27,6 @@
   font-size: 1.125em;
   text-align: right;
   font-weight: 600;
-
 }
 
 .direction-list p {

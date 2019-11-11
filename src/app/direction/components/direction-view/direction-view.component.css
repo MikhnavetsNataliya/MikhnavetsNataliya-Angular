@@ -1,19 +1,40 @@
+@import "../../../../assets/css/colors.css";
+
 .direction-view {
+  display: block;
   padding: 0 1.875em;
+  font-size: 1rem;
 }
 
-h3, h4 {
-  font-size: 1.75em;
-  font-weight: 400;
+.direction-view__content{
+  margin-bottom: 5em;
+}
+
+h2, h3, h4 {
+  font-size: 1.5em;
+  font-weight: 600;
   margin: 0 0 1.25em;
+  color: var(--direction-list-color);
+  letter-spacing: 0.1em;
 }
 
+h2, h4 {
+  color: var(--direction-list-color-prise);
+  text-transform: uppercase;
+}
+h4 {
+  text-align: right;
+}
 p {
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 1.1em;
+  line-height: 1.7em;
+  color: var(--direction-list-color);
+  text-align: justify;
 }
 
 img{
-  width: 15em;
-  height: 15em;
+  float: left;
+  margin: 0.5em 0.625em 0.5em 0;
+  width: 25em;
+  height: 18em;
 }

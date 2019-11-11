@@ -50,7 +50,7 @@ export class LoginComponent implements OnInit {
     }
 
     this.loading = true;
-    this.userService.login(this.email, this.password)
+    this.userService.login(this.loginForm.value.email, this.loginForm.value.password)
       .then(success=> {
         this.router.navigate([this.returnUrl]);
       })

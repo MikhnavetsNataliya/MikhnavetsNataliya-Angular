@@ -1,32 +1,35 @@
-<section class="direction">
-  <div class="direction_content">
-    <nav>
-      <a
-        [routerLink]="[{ outlets: { primary: 'type/водный', type: null } }]"
-        routerLinkActive="active">
-        Водные
-      </a>
-      <a
-        [routerLink]="[{ outlets: { primary: 'type/горный', type: null } }]"
-        routerLinkActive="active">
-        Горные
-      </a>
-      <a
-        [routerLink]="[{ outlets: { primary: 'type/вело', type: null } }]"
-        routerLinkActive="active">
-        Вело
-      </a>
-      <a
-        [routerLink]="[{ outlets: { primary: 'type/комбинированный', type: null } }]"
-        routerLinkActive="active">
-        Комбинированные
-      </a>
-      <a
-        [routerLink]="[{ outlets: { primary: 'type/выходного дня', type: null } }]"
-        routerLinkActive="active">
-        Выходного дня
-      </a>
-    </nav>
-    <app-direction-type></app-direction-type>
-  </div>
-</section>
+<div class="opasity">
+  <section class="direction">
+    <div class="direction_content">
+      <nav>
+        <a
+          [routerLink]="['type/водный']"
+          routerLinkActive="active">
+          Водные
+        </a>
+        <a
+          [routerLink]="['type/горный']"
+          routerLinkActive="active">
+          Горные
+        </a>
+        <a
+          [routerLink]="['type/вело']"
+          routerLinkActive="active">
+          Вело
+        </a>
+        <a
+          [routerLink]="['type/комбинированный']"
+          routerLinkActive="active">
+          Комбинированные
+        </a>
+        <a
+          [routerLink]="['type/выходного дня']"
+          routerLinkActive="active">
+          Выходного дня
+        </a>
+      </nav>
+      <app-direction-type></app-direction-type>
+    </div>
+  </section>
+
+</div>

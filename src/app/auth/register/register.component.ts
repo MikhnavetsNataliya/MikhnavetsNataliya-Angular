@@ -48,7 +48,7 @@ export class RegisterComponent implements OnInit {
       return;
     }
 
-    this.userService.register(this.email, this.password)
+    this.userService.register(this.registerForm.value.email, this.registerForm.value.password)
       .then(success => {
           this.alertService.success('Регистрация прошла успешно', true );
           this.router.navigate(['/login']);

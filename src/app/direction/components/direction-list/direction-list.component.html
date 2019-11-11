@@ -1,6 +1,6 @@
 <a
   class="direction-list"
-  [routerLink]="['', { outlets: { type: ['expedition', expedition.id] } }]"
+  [routerLink]="['/', 'direction','expedition', expedition.id]"
   routerLinkActive="active">
   <h3><u>{{ expedition.fullname }}</u></h3>
   <p><span><strong>Страна</strong></span>: {{ expedition.country}}</p>

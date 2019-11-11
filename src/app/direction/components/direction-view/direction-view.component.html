@@ -1,14 +1,14 @@
 <div class="direction-view">
-<!--
-  <img src={{ (expedition | async).img }}></img>
--->
-  <p>{{ (expedition | async).type }}</p>
-  <h3>{{ (expedition | async).fullname }}</h3>
-  <p>{{ (expedition | async).country}}</p>
-  <p>{{ (expedition | async).complication}}</p>
-  <p>{{ (expedition | async).duration + 'дн.' }}</p>
-  <p>{{ (expedition | async).groupSize}}</p>
-  <p>{{ (expedition | async).instructor}}</p>
-  <h4>{{ (expedition | async).price | currency:'BLR':'code'}}</h4>
-  <p>{{ (expedition | async).generalInformation}}</p>
+  <h2>{{ (expedition | async).type }} тур</h2>
+  <div class="direction-view__content">
+    <img src="{{ (expedition | async).img }}" alt="{{ (expedition | async).fullname }}">
+    <h3><u>{{ (expedition | async).fullname }}</u></h3>
+    <p><span><strong>Страна</strong></span>: {{ (expedition | async).country }}</p>
+    <p><span><strong>Сложность</strong></span>: {{ (expedition | async).complication }}</p>
+    <p><span><strong>Длительность</strong></span>: {{ (expedition | async).duration + 'дн.' }}</p>
+    <p><span><strong>Размер группы</strong></span>: {{ (expedition | async).groupSize }}</p>
+    <p><span><strong>Инструктор</strong></span>: {{ (expedition | async).instructor }}</p>
+    <h4><span>{{ (expedition | async).price | currency:'BLR':'code' }}</span></h4>
+    <p>{{ (expedition | async).generalInformation }}</p>
+  </div>
 </div>

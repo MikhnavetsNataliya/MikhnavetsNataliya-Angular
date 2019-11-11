@@ -1,4 +1,16 @@
-/*связь*/
+.opasity{
+  background-image: url("../../assets/image/fon_2.jpg");
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.contacts,
+.section{
+  background: rgba(250, 250, 250, 0.9);
+  margin: 0 auto;
+}
+
 .contacts {
   display: flex;
   padding: 3.5em .5em;

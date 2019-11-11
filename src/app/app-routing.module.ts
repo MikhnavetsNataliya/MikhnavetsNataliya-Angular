@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
-import {CommonModule} from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from "./about/about.component";
 import { NotFoundComponent } from "./not-found/not-found.component";
-import {AuthGuard} from "./core/auth.guard";
+import { AuthGuard } from "./core/auth.guard";
 
 const routes: Routes = [
   {
